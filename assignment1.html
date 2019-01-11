@@ -12,14 +12,35 @@
     <body> 
 
         <div class="header">
-            <h1>Example Student's Assignment 1!</h1>
+            <h1>Assigntment 1: Blink!</h1>
+           
             <p>
-            <img src="A1Circuit.jpg" width=400></a>
+            	<img src="blink.gif" width=400></a>
             </p>
             <p>
-            Here is all the documentation for assignment 1!
+            The LED blinking sequence.
+        	</p>
+        </div>
+        <div class="blinking">
+        	<h2>Circuit</h2>
+        	 <p>
+            	<img src="A1circuit.jpg" width=400></a>
+            	<img src="circuit.jpg" width=400></a>
+            </p>
+
+            <p>
+            Circuit for 3 blinking LEDs. I used pins 11, 12, and 13 for power and connected ground to the negative row on the breadboard. I connected to power for each LED with a red wire connected to a resistor first (330 ohms for red, 100 ohms for blue, and 100 ohms for green), then the resistor to the corresponding LED. I calculated the resistance needed for each LED using the equation V=IxR. Finally, I connected black wires from the negative row on the bread board (ground) to the second pin on each LED.  
             </p>
         </div>
-        
+        <div class="schematic"> 
+        	<img src="schematic.jpg" width=400></a>
+        	<p>
+        		Here is the schematic for each of the LEDs and the calculation for the resistors with 5V of power from the board. I used the target of 20mA and the drop voltage for each light. 
+</div>
+<div class="code">
+	<img src="codesnippet.jpg"></a>
+	<p>
+		Here is the code I used within the Arduino IDE to create the sequence of LED blinks. See comments in the code for a description of each section of code.
+</div>
     </body>
 </html>
