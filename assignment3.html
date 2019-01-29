@@ -13,8 +13,8 @@
 
         <div class="header">
             <h1>Assignment 3: Input Output!</h1>
-            <img src="darklight.gif" width=400></a>  
-            <img src="lightlight.gif" width=400></a>  
+            <img src="darklight.gif" width=250></a>  
+            <img src="lightlight.gif" width=250></a>  
 
             <p>Here is the LED changing brightness along with the brightness change for the sensor! When the LDR senses a lot of light (gif 2), the light turns off completely!</p>    
             <h2>Circuit</h2>
@@ -24,11 +24,12 @@
             <h2>Schematic</h2>
             <img src="A3schematic.jpg" width=400></a>
             <p>Here is a schematic showing the LDR connected to 5V and ground with a 1k resistor and the other leg to pin A0. I chose a 1k resistor because the data sheet showed the range of resistance can go up to 11k. I'm not using lights bright enough to reach that high, but I probably should've used a 10k resistor to be safe. The red lED is connected to pin 9 
-            (PWM so it can vary in brightness) through a 1k resistor (voltage drop = 1.8; V =IR; 5v-1.8V = 20mA x R; 3.2/.02 = 160 ohms; used 1k to be safe) and the other leg to ground.
+            (PWM so it can vary in brightness) through a 1k resistor (voltage drop = 1.8V; V = IR; 5v-1.8V = 20mA x R; 3.2V/.02A = 160 ohms; used 1k to be safe) and the other leg to ground.
             <h2>Code</h2>
             <img src="A3code.jpg" width=600></a>
             <p>The code for this circuit allows the LDR on pin A0 to control the LED on pin 9. When the light sensor senses a very high amount of light, the LED is turned off using analogWrite. When the light is not very high, the LED mirrors the brightness value sensed by the LDR. </p>
 
         </div>
+        <br>
     </body>
 </html>
