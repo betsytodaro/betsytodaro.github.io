@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Betsy Todaro</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Assignment 3: Input Output!</h1>
+            <img src="darklight.gif" width=400></a>  
+            <p>Here is the LED changing brightness along with the brightness change for the sensor!</p>    
+            <h2>Circuit</h2>
+            <img src="A3circuitpic.jpg" width=600></a>
+            <img src="A3circuit.jpg" width=600></a>
+            <p>Here is the circuit including an LDR (light dependent resistor) and an LED. I connected one leg of the LDR to 5V, one leg to ground and A0 using a 1k resistor (A0 is the input pin). I then connected an LED like in the previous assignment to pin 9 (used a 1k resistor) and the other leg to ground. I chose to use a 1k resistor to be safe, although the red LED would only require a 220 ohm resistor. The LDR will control the brightness of the LED with code. </p>
+            <h2>Schematic</h2>
+            <img src="A3schematic.jpg" width=400></a>
+            <p>Here is a schematic showing the button and LEDs connection to ground, power, and their resistors.
+            <h2>Code</h2>
+            <img src="A3code.jpg" width=600></a>
+            <p>The code for this circuit allows the LDR on pin A0 to control the LED on pin 9. When the light sensor senses a very high amount of light, the LED is turned off using analogWrite. When the light is not very high, the LED mirrors the brightness value sensed by the LDR. </p>
+
+        </div>
+    </body>
+</html>
