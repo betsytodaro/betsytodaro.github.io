@@ -1,0 +1,40 @@
+sketch.js:
+
+var serial; // variable to hold an instance of the serialport library
+var portName = '/dev/ttyACM0' //rename to the name of your port
+var datain; //some data coming in over serial!
+In folder p5/empty-example
+
+index.html and sketch.js
+
+function serialEvent() {
+  if (serial.available()) {
+      datain = Number(serial.readLine());
+    	//console.log(datain);
+  }
+}
+
+sketch.js:
+
+function setup() {
+  // put setup code here
+  createCanvas(1200, 800);
+  background(255,0,80);
+
+}
+
+function draw() {
+  // put drawing code here
+    ellipse(50, 50, 80, 80);
+}
+
+function draw() {
+  background(0);
+  fill(255);
+
+  if (datain == 0) {
+  	text("button pressed: YES", 30,30);
+  } else {
+  	text("button pressed: NO", 30,30);
+  }
+}
